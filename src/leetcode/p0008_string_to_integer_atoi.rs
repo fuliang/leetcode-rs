@@ -18,13 +18,13 @@ struct DFA {
 impl DFA {
     fn new() -> DFA {
         let states = vec![State::Start, State::Signed, State::InNumber, State::End];
-        let transfer_table = vec![
+        let trans_matrix = vec![
             vec![State::Start, State::Signed, State::InNumber, State::End],
             vec![State::End, State::End, State::InNumber, State::End],
             vec![State::End, State::End, State::InNumber, State::End],
             vec![State::End, State::End, State::End, State::End],
         ];
-        let table: HashMap<State, Vec<State>> = states.into_iter().zip(transfer_table.into_iter()).collect();
+        let table: HashMap<State, Vec<State>> = states.into_iter().zip(trans_matrix.into_iter()).collect();
 
         DFA { 
             sign: 1, 
