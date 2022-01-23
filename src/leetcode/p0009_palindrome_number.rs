@@ -3,9 +3,8 @@ struct Solution;
 impl Solution {
     pub fn is_palindrome(x: i32) -> bool {
         match x {
-            x if x < 0 => false,
+            x if x < 0 || x % 10 == 0 => false,
             x if x < 10 => true,
-            x if x % 10 == 0 => false,
             _ => {
                 let mut x = x;
                 let mut rev = 0;
