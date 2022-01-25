@@ -7,7 +7,7 @@ impl Solution {
 
         let mut max_area = 0_i32;
         while i < j {
-            let area: i32 = i32::min(height[i], height[j]) * (j - i) as i32;
+            let area = i32::min(height[i], height[j]) * (j - i) as i32;
             if max_area < area {
                 max_area = area;
             }
