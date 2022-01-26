@@ -5,7 +5,7 @@ impl Solution {
         let mut nums = nums;
         nums.sort();
 
-        let mut best = 1000_00;
+        let mut best = 100_000;
 
         for i in 0..nums.len() {
             if i > 0 && nums[i] == nums[i-1] {
