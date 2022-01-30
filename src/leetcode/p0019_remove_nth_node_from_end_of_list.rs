@@ -1,7 +1,6 @@
 use crate::leetcode::link_node::*;
-use std::mem;
 
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn get_len(head: &Option<Box<ListNode>>) -> i32 {

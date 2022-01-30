@@ -17,3 +17,4 @@ pub mod p0017_letter_combinations_of_a_phone_num;
 pub mod p0018_4sum;
 pub mod p0019_remove_nth_node_from_end_of_list;
 pub mod p0020_valid_parentheses;
+pub mod p0021_merge_two_sorted_lists;

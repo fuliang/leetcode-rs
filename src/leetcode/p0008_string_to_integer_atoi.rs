@@ -1,14 +1,14 @@
 use std::collections::HashMap;
 
 #[derive(PartialEq, Eq, Hash, Debug, Clone, Copy)]
-enum State {
+pub enum State {
     Start,
     Signed,
     InNumber,
     End,
 }
 
-struct DFA {
+pub struct DFA {
     sign: i64,
     ans: i64,
     state: State,
@@ -64,7 +64,7 @@ impl DFA {
     }
 }
 
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn my_atoi(s: String) -> i32 {

@@ -1,6 +1,6 @@
-use std::{slice::SliceIndex, collections::HashMap};
+use std::collections::HashMap;
 
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn is_valid(s: String) -> bool {

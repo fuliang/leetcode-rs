@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 
 fn char_to_int(c: char) -> i32 {
     match c {

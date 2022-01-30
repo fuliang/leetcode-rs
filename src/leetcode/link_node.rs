@@ -30,6 +30,12 @@ impl List {
         List  { head: list }
     }
 
+    pub fn add_all(&mut self, list: &Vec<i32>) {
+        for i in (0..list.len()).rev() {
+            self.push(list[i]);
+        }
+    }
+
     pub fn push(&mut self, elem: i32) {
         let new_node = Box::new(ListNode{
             val: elem,

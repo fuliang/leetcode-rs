@@ -1,4 +1,4 @@
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn longest_common_prefix(strs: Vec<String>) -> String {
@@ -11,7 +11,7 @@ impl Solution {
                                     .collect();
         let first = &strs[0];
         
-        let mut i = 0;
+        let mut i;
         let mut j = 0;
         loop {
                 i = 1;

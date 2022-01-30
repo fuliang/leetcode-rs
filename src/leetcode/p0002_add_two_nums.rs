@@ -31,7 +31,6 @@ impl Add for List {
             if carry_pre == -1 {
                 if sum != 0 {
                     current.next = Some(Box::new(ListNode::new(sum)));
-                    current = current.next.as_mut().unwrap();
                 }
                 break;
             } else {
@@ -42,7 +41,7 @@ impl Add for List {
         List::init(head.next)
     }
 }
-struct Solution;
+pub struct Solution;
 
 impl Solution {
     pub fn add_two_numbers(l1: Option<Box<ListNode>>, l2: Option<Box<ListNode>>) -> Option<Box<ListNode>> {
