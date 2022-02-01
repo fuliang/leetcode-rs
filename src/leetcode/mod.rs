@@ -20,3 +20,4 @@ pub mod p0020_valid_parentheses;
 pub mod p0021_merge_two_sorted_lists;
 pub mod p0022_generate_parentheses;
 pub mod p0026_remove_duplicates_from_sorted_array;
+pub mod p0027_remove_element;
