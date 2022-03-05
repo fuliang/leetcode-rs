@@ -23,3 +23,4 @@ pub mod p0026_remove_duplicates_from_sorted_array;
 pub mod p0027_remove_element;
 pub mod p0028_implement_strstr;
 pub mod p0031_next_premutation;
+pub mod p0033_search_in_rotated_sorted_array;
